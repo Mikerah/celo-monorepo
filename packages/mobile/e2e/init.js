@@ -19,9 +19,11 @@ const { timeout, TimeoutError } = require('./utils')
 //jasmine.getEnv().addReporter(assignReporter)
 
 // Increase default jest timeout
-jest.setTimeout(120000)
+//jest.setTimeout(120000)
 
 const INIT_TIMEOUT = 300000
+
+//TODO(Alec): Should this be deleted?
 
 beforeAll(
   async () => {
@@ -62,11 +64,11 @@ beforeAll(
   INIT_TIMEOUT + 5000
 )
 
-beforeEach(async () => {
-  //await adapter.beforeEach()
-})
+// beforeEach(async () => {
+//   //await adapter.beforeEach()
+// })
 
-afterAll(async () => {
-  //await adapter.afterAll()
-  await detox.cleanup()
-})
+// afterAll(async () => {
+//   //await adapter.afterAll()
+//   await detox.cleanup()
+// })

@@ -1,6 +1,5 @@
 const flakeTrackingConfig = {
   //globalSetup: require.resolve('./setup.global.js'),
-  bail: 3,
   globals: {
     FLAKES: Map,
     RETRY_TIMES: 10,
